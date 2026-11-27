@@ -1,0 +1,80 @@
+{
+  "nodes": [
+    {
+      "id": "a",
+      "position": {
+        "x": 0,
+        "y": 0
+      },
+      "caption": "Airport A",
+      "labels": [
+        "Airport"
+      ],
+      "properties": {
+        "id": "integer",
+        "name": "string",
+        "code": "string",
+        "city": "string",
+        "country": "string",
+        "lat": "float",
+        "lon": "float"
+      },
+      "style": {
+        "caption-font-size": 22,
+        "label-font-size": 18,
+        "property-font-size": 18
+      }
+    },
+    {
+      "id": "b",
+      "position": {
+        "x": 650,
+        "y": 0
+      },
+      "caption": "Airport B",
+      "labels": [
+        "Airport"
+      ],
+      "properties": {
+        "id": "integer",
+        "name": "string",
+        "code": "string",
+        "city": "string",
+        "country": "string",
+        "lat": "float",
+        "lon": "float"
+      },
+      "style": {
+        "caption-font-size": 22,
+        "label-font-size": 18,
+        "property-font-size": 18
+      }
+    }
+  ],
+  "relationships": [
+    {
+      "id": "r",
+      "fromId": "a",
+      "toId": "b",
+      "type": "ROUTE_TO",
+      "properties": {
+        "airlines": "integer"
+      },
+      "style": {
+        "detail-position": "above",
+        "property-position": "outside"
+      }
+    },
+    {
+      "id": "p",
+      "fromId": "a",
+      "toId": "b",
+      "type": "CONNECTED_TO",
+      "properties": {},
+      "style": {
+        "detail-position": "below"
+      }
+    }
+  ],
+  "style": {}
+}

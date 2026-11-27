@@ -1,0 +1,6 @@
+.neo4j/
+.community/
+neo4j-community.zip
+__pycache__/
+results/.qa/
+results/arrows-report-check.png
